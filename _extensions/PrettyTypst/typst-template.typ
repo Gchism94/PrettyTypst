@@ -26,20 +26,20 @@
   )
   
   // Set the body font.
-  set text(10pt, font: "Ubuntu")
+  set text(10pt, font: "Lexend")
 
   // Configure headings.
   show heading.where(level: 1): set block(below: 0.8em)
   show heading.where(level: 1): underline
   show heading.where(level: 2): set block(above: 0.5cm, below: 0.5cm)
 
-  // Links should be purple.
-  show link: set text(rgb("#800080"))
+  // Links should be red.
+  show link: set text(rgb("#AB0520"))
 
-  // Configure light purple border.
+  // Configure light AZ blue border.
   show figure: it => block({
     move(dx: -3%, dy: 1.5%, rect(
-      fill: rgb("FF7D79"),
+      fill: rgb(12,35,75),
       inset: 0pt,
       move(dx: 3%, dy: -1.5%, it.body)
     ))
@@ -51,7 +51,7 @@
     column-gutter: 2.5cm,
 
     // Title.
-    pad(bottom: 1cm, text(font: "Ubuntu", 20pt, weight: 800, upper(title))),
+    pad(bottom: 1cm, text(font: "Lexend", 20pt, weight: 800, upper(title))),
 
     // The logo in the sidebar.
     locate(loc => {

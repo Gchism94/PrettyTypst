@@ -12,7 +12,7 @@ contributes:
       margin:
         x: 2cm
         y: 2cm
-      font-paths: Ubuntu
+      font-paths: Lexend
       template-partials:
         - typst-template.typ
         - typst-show.typ
